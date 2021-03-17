@@ -1,0 +1,15 @@
+git init ----------------------- iniciar repositorio
+
+git checkout <rama> ------------ cambiar de rama
+
+git branch <rama> -------------- crear rama(-m renombrar)
+
+git add <archivo> -------------- agregar archivo a stage area
+
+git commit -m <mensaje> -------- Agregar desde stage area a repositorio (--amend para corregir el commit anterior)
+
+git status --------------------- ver el estado de los archivos
+
+git log ------------------------ Registro de los commits de la rama
+
+git log --graph --all ---------- Registro grafico de todas las ramas
