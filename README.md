@@ -1,37 +1,37 @@
 # Main commands
-git init -------------------------------------------- Iniciar repositorio
+git init --------------------------------------- Iniciar repositorio
 
-git checkout <rama> --------------------------------- Cambiar de rama
+git checkout <rama> ---------------------------- Cambiar de rama
 
-git branch <rama> ----------------------------------- Crear rama(-m renombrar)
+git branch <rama> ------------------------------ Crear rama(-m renombrar)
 
-git add <archivo> ----------------------------------- Agregar archivo a stage area
+git add <archivo> ------------------------------ Agregar archivo a stage area
 
-git commit -m <mensaje> ----------------------------- Agregar desde stage area a repositorio (--amend para corregir el commit anterior)
+git commit -m <mensaje> ------------------------ Agregar desde stage area a repositorio (--amend para corregir el commit anterior)
 
-git status ------------------------------------------ Ver el estado de los archivos
+git status ------------------------------------- Ver el estado de los archivos
 
-git log --------------------------------------------- Registro de los commits de la rama
+git log ---------------------------------------- Registro de los commits de la rama
 
-git log --graph --all ------------------------------- Registro grafico de todas las ramas
+git log --graph --all -------------------------- Registro grafico de todas las ramas
 
-git remote add <nombre_rama_remota> <url> ----------- Agregar repositorio remoto
+git remote add <nombre_rama_remota> <url> ------ Agregar repositorio remoto
 
-git pull <nombre_rama_remota> <url> ----------------- Sincronizar desde repositorio remoto (-allow-unrelated-histories cuando no tienen commits en común)
+git pull <nombre_rama_remota> <url> ------------ Sincronizar desde repositorio remoto (-allow-unrelated-histories cuando no tienen commits en común)
 
-git push <nombre_rama_remota> <url> ----------------- Subir a repositorio remoto
+git push <nombre_rama_remota> <url> ------------ Subir a repositorio remoto
 
-git merge <nombre_rama> ----------------------------- Unir otra rama a la rama actual
+git merge <nombre_rama> ------------------------ Unir otra rama a la rama actual
 
-git tag <nombre> ------------------------------------ Etiiqueta para identificar algo, como versiones
+git tag <nombre> ------------------------------- Etiiqueta para identificar algo, como versiones
 
-git reflog ------------------------------------------ Últimos cambios con ID
+git reflog ------------------------------------- Últimos cambios con ID
 
-git reset --<tipo> <ID> ----------------------------- Devuelve al punto ID(--hard borra los cambios sin commit, --soft mantiene los cambios sin comit)
+git reset --<tipo> <ID> ------------------------ Devuelve al punto ID(--hard borra los cambios sin commit, --soft mantiene los cambios sin comit)
 	
-git remote -v --------------------------------------- Listar repositorios remotos
+git remote -v ---------------------------------- Listar repositorios remotos
 
-git remote add <nombre> <url> ----------------------- Agregar repositorio remoto
+git remote add <nombre> <url> ------------------ Agregar repositorio remoto
 
 
 ## Train register
