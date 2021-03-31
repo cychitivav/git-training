@@ -17,7 +17,7 @@ git log --graph --all ------------------------------- Registro grafico de todas 
 
 git remote add <nombre_rama_remota> <url> ----------- Agregar repositorio remoto
 
-git pull <nombre_rama_remota> <url> ----------------- Sincronizar desde repositorio remoto
+git pull <nombre_rama_remota> <url> ----------------- Sincronizar desde repositorio remoto (-allow-unrelated-histories cuando no tienen commits en común)
 
 git push <nombre_rama_remota> <url> ----------------- Subir a repositorio remoto
 
@@ -28,6 +28,10 @@ git tag <nombre> ------------------------------------ Etiiqueta para identificar
 git reflog ------------------------------------------ Últimos cambios con ID
 
 git reset --<tipo> <ID> ----------------------------- Devuelve al punto ID(--hard borra los cambios sin commit, --soft mantiene los cambios sin comit)
+	
+git remote -v --------------------------------------- Listar repositorios remotos
+
+git remote add <nombre> <url> ----------------------- Agregar repositorio remoto
 
 
 ## Train register
