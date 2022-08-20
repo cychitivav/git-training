@@ -69,7 +69,7 @@ Staging area is a temporary memory area where you can add files to be committed.
 | Command | Description |
 | :--------- | :------------- |
 | `git branch <branch-name>`| Creates a new branch. With `-d` flag, deletes the branch, `-a` list all branches (local and remote) and `-m` flag, rename the branch. |
-| `git checkout <other-name>` | Switch to the *other-name* branch. |
+| `git checkout <other-name>` | Switch to the *other-name* branch. With `-b` flag, create other branch. |
 | `git merge <other-name>` | Merge the *other-name* branch into the current branch. When the merge is unsuccessful, the current branch is left in a conflicted state and the merge can be resolved by hand or aborted with `--abort` flag. |
 | `git rebase <other-name>` | First rebase the *other-name* branch into the current branch and then rebase the current branch into the *other-name* branch. (Use only for local repositories) |
 </div>
@@ -84,14 +84,10 @@ Staging area is a temporary memory area where you can add files to be committed.
 | `git stash pop` | Restore the stashed changes. |
 | `git stash branch <branch-name>` | Create a new branch from the stashed changes. |
 | `git stash drop` | Delete the stash files. |
-| | |
 | `git clean --dry-run` | Show the files that would be deleted. |
 | `git clean -f` | Remove untracked files (folder will not be removed). |
-| | |
 | `git cherry-pick <commit-id>` | Cherry-pick the *commit-id* (of any branch) into the current branch. *This commands may generate conflicts when merging.* |
-| | |
 | `git grep <pattern>` | Search for *pattern* in the current branch files. With the `-c` flag, counts the number of occurrences. |
-| | |
 | `git blame <file>` | Show the history of the *file* and the author who made the changes by line. |
 
 </div>
@@ -120,6 +116,7 @@ Staging area is a temporary memory area where you can add files to be committed.
 | `git pull <alias> <branch>` | Pulls the *branch* from the *alias* repository. When the remote repository has different commits than the local repository, use the `--allow-unrelated-histories` flag . |
 | `git remote set-url <alias> <url>` | Changes the *url* of the *alias* repository. |
 | `git push <alias> --tags` | Pushes the tags to the *alias* repository. |
+| `git push <alias> -d <branch-name>` | Delete the *branch-name* branch in the *alias* repository. |
 
 
 </div>
