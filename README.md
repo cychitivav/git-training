@@ -72,6 +72,7 @@ Staging area is a temporary memory area where you can add files to be committed.
 | `git checkout <other-name>` | Switch to the *other-name* branch. With `-b` flag, create other branch. |
 | `git merge <other-name>` | Merge the *other-name* branch into the current branch. When the merge is unsuccessful, the current branch is left in a conflicted state and the merge can be resolved by hand or aborted with `--abort` flag. |
 | `git rebase <other-name>` | First rebase the *other-name* branch into the current branch and then rebase the current branch into the *other-name* branch. (Use only for local repositories) |
+| `git checkout --orphan <branch-name>` | Create a empty branch |
 </div>
 
 #### Tools
